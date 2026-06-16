@@ -127,7 +127,6 @@ modalBg.addEventListener("click", ()=>{
     modal.classList.remove("active");
 });
 
-
 addTaskButton.addEventListener("click",()=>{
     const taskTitle = document.querySelector("#task-title-input").value
     const taskDesc = document.querySelector("#task-desc-input").value
