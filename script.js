@@ -14,21 +14,49 @@ function addTask(title, desc, column){
     div.setAttribute("draggable", "true");
 
     div.innerHTML = `
-        <h2>${title}</h2>
-        <p>${desc}</p>
-        <button>Delete</button>
-    `
+        <div class="task-row">
+            <h2>${title}</h2>
+            <button class="edit-btn">✏️</button>
+        </div>
+    
+        <div class="task-row">
+            <p>${desc}</p>
+            <button class="delete-btn">Delete</button>
+        </div>
+    `;
     column.appendChild(div);
 
+    // Drag logic
     div.addEventListener("drag", (e) =>{
         dragElement = div;
     });
 
-    const deleteButton = div.querySelector("button");
+    // DELETE
+    const deleteButton = div.querySelector(".delete-btn");
     deleteButton.addEventListener("click", ()=>{
         div.remove();
         updateTaskCount();
-    })
+    });
+
+    // EDIT 
+
+    const editButton = div.querySelector(".edit-btn");
+    editButton.addEventListener("click",()=>{
+        const currentTitle = div.querySelector("h2").innerText;
+        const currentDesc = div.querySelector("p").innerText;
+
+        const newTitle = prompt("Edit Task Title:", currentTitle);
+        const newDesc = prompt("Edit Task Description:", currentDesc);
+
+        if(newTitle != null && newTitle.trim() !==""){
+            div.querySelector("h2").innerText = newTitle;
+        }
+
+        if(newDesc !== null && newDesc.trim() !== ""){
+            div.querySelector("p").innerText = newDesc;
+        }
+        updateTaskCount();
+    });
 
     return div;
 }

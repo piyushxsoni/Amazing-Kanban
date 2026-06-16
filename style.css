@@ -111,10 +111,17 @@ section .task-column .task{
         border-radius: var(--border-radius-m);
         display: flex;
         flex-direction: column;
-        gap: var();
+        gap: var(--padding-s);
         cursor: grab;
 }
-section .task-column .task button{
+
+.task-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit-btn,
+.delete-btn{
         align-self: self-end;
         background-color: var(--bg-button-colour);
         /* color: var(--primary-text-color); */
@@ -124,6 +131,7 @@ section .task-column .task button{
         border: #000 outset;
         outline:none;
 }
+
 
 .modal{
         position: fixed;
