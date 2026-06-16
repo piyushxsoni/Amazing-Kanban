@@ -4,7 +4,7 @@ A modern and responsive Kanban Board built using HTML, CSS, and JavaScript. It h
 
 ## 🌐 Live Demo
 
-https://amazing-kanban.netlify.app/
+https://amazing-kanban-board.netlify.app/
 
 ## ✨ Features
 
