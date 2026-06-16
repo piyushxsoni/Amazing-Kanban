@@ -10,32 +10,16 @@ https://amazing-kanban.netlify.app/
 
 * Create new tasks
 * Drag and drop tasks between columns
-* Organize tasks into:
+* Organize tasks into To Do, In Progress, and Done
+* Responsive and user-friendly design
+* Modern UI with smooth interactions
+* Task management workflow
 
-  * 📌 To Do
-  * 🔄 In Progress
-  * ✅ Done
-* Responsive design
-* Clean and modern UI
-* Easy task management
-
-## 🛠️ Technologies Used
+## 🛠️ Built With
 
 * HTML5
 * CSS3
 * JavaScript (ES6)
-
-## 📂 Project Structure
-
-```text
-Amazing-Kanban/
-│
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-└── README.md
-```
 
 ## 🚀 Getting Started
 
@@ -51,7 +35,7 @@ git clone https://github.com/YOUR_USERNAME/amazing-kanban.git
 cd amazing-kanban
 ```
 
-3. Run `index.html` in your browser.
+3. Open `index.html` in your browser.
 
 ## 📸 Preview
 
@@ -60,17 +44,17 @@ Add screenshots of your project here.
 ## 🎯 Future Improvements
 
 * Task editing
-* Due dates and reminders
+* Due dates
 * Dark mode
-* Local storage support
-* User authentication
+* Local storage persistence
+* User accounts and authentication
 
 ## 👨‍💻 Author
 
-**Piyush Soni**
+Piyush Soni
 
 BCA (AIML) Student | Web Developer | Data Science Enthusiast
 
 ## ⭐ Support
 
-If you like this project, consider giving it a star on GitHub.
+If you found this project useful, please give it a star on GitHub.
