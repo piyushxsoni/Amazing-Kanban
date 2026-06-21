@@ -72,7 +72,7 @@ function updateTaskCount(){
                 desc: t.querySelector("p").innerText 
             }
         })
-        localStorage.setItem("tasks", JSON.stringify(tasksData)); //this is stored the data in local storage... in string formate
+        localStorage.setItem("tasks", JSON.stringify(tasksData)); // It is stored the data in local storage... in string formate
         count.innerText = tasks.length;
     })
 }

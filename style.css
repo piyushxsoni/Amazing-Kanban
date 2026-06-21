@@ -4,8 +4,8 @@
         box-sizing: border-box;
 }
 body{
-        height: 100;
-        width: 100;
+        height: 100vh;
+        width: 100%;
 }
 
 html{
@@ -16,7 +16,7 @@ html{
         
         /* --background-color: #000000; */
         --bg-color: #000000;   /* short variable name*/
-        --bg-button-colour:#243e09;
+        --bg-button-colour:#243c09;
         --background-task-colour:#212c26;
         --primary-text-color:#e7e7e7;
 
@@ -120,7 +120,17 @@ section .task-column .task{
     justify-content: space-between;
     align-items: center;
 }
-.edit-btn,
+.edit-btn{
+        align-self: self-end;
+        background-color: var(--background-task-colour);
+        color: var(--primary-text-color);
+        cursor: pointer;
+        padding: var(--border-radius-s) var(--border-radius-m);
+        /* border:none */
+        border-radius: var(--border-radius-s) var(--border-radius-m);
+        border: #000 outset;
+        outline:none;
+}
 .delete-btn{
         align-self: self-end;
         background-color: var(--bg-button-colour);
@@ -186,3 +196,38 @@ section .task-column .task{
         width: fit-content;
         align-self: center;
 } 
+
+
+/* ==========================
+   TABLET RESPONSIVE
+   ========================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    section {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+/* ==========================
+   MOBILE RESPONSIVE
+   ========================== */
+@media (max-width: 480px) {
+    nav .left {
+        font-size: 1.2rem;
+    }
+
+    nav button {
+        width: 100%;
+    }
+
+    .modal .center {
+        width: 90%;
+    }
+}
